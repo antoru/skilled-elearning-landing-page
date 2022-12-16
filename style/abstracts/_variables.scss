@@ -1,0 +1,130 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+
+/// colors
+$Dark_Blue_Gray: #666CA3;
+$Yankees_Blue: #13183F;
+$Roman_Silver: #83869A;
+$Sasquatch_Socks: #F74780;
+$Carnation_Pink: #FFA7C3;
+$Gradient_01: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+$Gradient_02: linear-gradient(180deg, #4851FF 0%, #F02AA6 99.92%);
+$Gradient_03: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5));
+$Gradient_04: linear-gradient(180deg, #4851FF -54.32%, #F02AA6 100%);
+
+
+///max width containers
+// $max_width_container_desktop: 1110px;
+// $max_width_container_tablet: 100%;
+// $max_width_container_mobile: 100%;
+
+///breakpoint
+// $breakpoint-desktop-min: 1025px;
+// $breakpoint-tablet-max: 1024px;
+// $breakpoint-tablet-min: 481px;
+// $breakpoint-mobile-max: 480px;
+
+$breakpoint-desktop-min: 840px;
+$breakpoint-tablet-max: 839px;
+$breakpoint-tablet-min: 744px;
+$breakpoint-mobile-max: 743px;
+
+// @media(min-width:$breakpoint-desktop-min){}
+// @media(min-width:$breakpoint-tablet-min) and (max-width:$breakpoint-tablet-max){}
+// @media(min-width:$breakpoint-tablet-min)
+// @media(max-width:$breakpoint-tablet-max){}
+// @media(max-width:$breakpoint-mobile-max){}
+
+// Common breakpoints are
+
+// 320px — 480px for mobile devices,
+// 481px — 768px for iPads & tablets,
+// 769px — 1024px for small screens like laptop,
+// 1025px — 1200px for large screens like Desktops,
+// and 1201px and above for extra large screens like TV.
+
+/// fonts
+
+$Plus_Jakarta_Sans: 'Plus Jakarta Sans';
+
+@mixin heading_xl {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 5.6rem;
+    line-height: 7rem;
+}
+
+@mixin heading_l {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 4rem;
+    line-height: 5rem;
+}
+
+@mixin heading_m {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 3.2rem;
+    line-height: 4rem;
+}
+
+@mixin heading_s {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 2.4rem;
+    line-height: 2.8rem;
+}
+
+@mixin body_m {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    color: $Roman_Silver;
+
+    @media(min-width:$breakpoint-desktop-min) {
+        font-size: 1.8rem;
+        line-height: 2.8rem;
+    }
+
+    @media(max-width:$breakpoint-tablet-max) {
+        font-size: 1.6rem;
+        line-height: 2.6rem;
+    }
+
+}
+
+@mixin body_s {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 2.8rem;
+}
+
+@mixin container {
+
+    max-width: 114.2rem;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media(min-width:$breakpoint-desktop-min) {
+        padding-left: 1.6rem;
+        padding-right: 1.6rem;
+    }
+
+    @media(min-width:$breakpoint-tablet-min) and (max-width:$breakpoint-tablet-max){
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+
+    @media(max-width:$breakpoint-mobile-max){
+        padding-left: 1.6rem;
+        padding-right: 1.6rem;
+    }
+
+}
